@@ -10,7 +10,7 @@ else
 fi
 
 echo "do u want to push now"
-read x
+read $x
 
 if ($x == "y")
 then
