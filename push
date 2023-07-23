@@ -2,7 +2,7 @@
 
 git add * 
 
-if (-t $@)
+if [-t $@]
 then
 	git commit -m "$@"
 else
@@ -12,7 +12,7 @@ fi
 echo "do u want to push now"
 read $x
 
-if ( $x == "y" )
+if [ $x=="y" ]
 then
 	git push
 	echo "ok"
