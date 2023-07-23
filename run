@@ -1,0 +1,13 @@
+#!/bin/bash
+
+gcc -o a.out -Wall -Werror -pedantic -Wextra -std=gnu89 $@
+
+./a.out
+
+rm ./a.out
+
+echo "------------------betty------------------"
+
+arr=("$@")
+
+betty arr[-1]

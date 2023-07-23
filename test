@@ -1,0 +1,6 @@
+#!/bin/bash
+
+arr=("$@")
+echo "test1 = $arr[0]"
+echo "test2 = $arr[1]"
+echo "test3 = ${arr[2]}" 

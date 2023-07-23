@@ -1,0 +1,23 @@
+#!/bin/bash
+
+git add * 
+
+if (-t $@)
+then
+	git commit -m "$@"
+else
+	git commit -m "hot fix"
+fi
+
+echo "do u want to push now"
+read x
+
+if (x == "y")
+then
+	git push
+	echo "ok"
+	exit
+else
+	echo "ok, boss"
+	exit
+fi
