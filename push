@@ -2,7 +2,7 @@
 
 git add * 
 
-if [ -T $@ ]
+if [ $# ]
 then
 	git commit -m "$@"
 else
